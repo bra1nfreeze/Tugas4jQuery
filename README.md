@@ -2,7 +2,7 @@
 Tugas Praktikum 4 jQuery
 
 UPN "VETERAN" JAWA TIMUR <br> <br>
-Tugas 3 Javascript <br>
+Tugas 4 jQuery <br>
 Pemrograman WEB <br>
 Sistem Informasi <br>
 Dr. Eng. Agussalim, M.T. <br>
