@@ -1,0 +1,40 @@
+<html>
+<head>
+    <title>Tugas 1</title>
+	<!--Implementasi awal Javascript berdasarkan sumber jQuery-->
+	<script src="jquery-3.6.0.min.js"></script>
+	<!--Implementasi kode yang terdapat pada Javascript-->
+	<script type="text/javascript">
+		// function khusus digunakan oleh jQuery untuk menganalisa mendeteksi DOM
+		$(document).ready(
+			// function bagian kode yang akan dijalakan ketika DOM sudah siap
+			function() {
+			// menyembunyikan sebuah DOM elemen #gambar1 berdasarkan .sembunyi kecepatan slow "pelan"
+			$(".sembunyi").click(function(){$("#gambar1").hide("slow")});
+			// menampilkan sebuah DOM elemen #gambar1 berdasarkan .tampil kecepatan slow "pelan"
+			$(".tampil").click(function(){$("#gambar1").show("slow")});
+			// menyembunyikan sebuah DOM elemen #gambar2 berdasarkan .sembunyi kecepatan slow "pelan"
+			$(".sembunyi2").click(function(){$("#gambar2").hide("slow")});
+			// menampilkan sebuah DOM elemen #gambar2 berdasarkan .tampil kecepatan slow "pelan"
+			$(".tampil2").click(function(){$("#gambar2").show("slow")});
+			// menyembunyikan sebuah DOM elemen #gambar3 berdasarkan .sembunyi kecepatan slow "pelan"
+			$(".sembunyi3").click(function(){$("#gambar3").hide("slow")});
+			// menampilkan sebuah DOM elemen #gambar3 berdasarkan .tampil kecepatan slow "pelan"
+			$(".tampil3").click(function(){$("#gambar3").show("slow")});
+		});
+	</script>
+</head>
+	<body>
+		<!--Membuat tombol button berdasarkan masing-masing class-->
+		<button class="sembunyi">Sembunyikan</button>
+		<button class="tampil">Tampilkan</button>
+		<button class="sembunyi2">Sembunyikan</button>
+		<button class="tampil2">Tampilkan</button>
+		<button class="sembunyi3">Sembunyikan</button>
+		<button class="tampil3">Tampilkan</button>
+		<!--menambahkan gambar melalui paragraf dengan sumber dari folder-->
+		<p><img src="logoupnbaru.png" id="gambar1">
+		<img src="penguin.png" id="gambar2">
+		<img src="cartman.jpeg" id="gambar3"></p>
+	</body>
+</html>

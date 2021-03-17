@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>Selector Class</title>
+        <!--Implementasi awal Javascript berdasarkan sumber jQuery-->
+        <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+        <!--Implementasi kode yang terdapat pada Javascript-->
+        <script type="text/javascript">
+        // function khusus digunakan oleh jQuery untuk menganalisa mendeteksi DOM
+        $(document).ready(
+            // function bagian kode yang akan dijalakan ketika DOM sudah siap
+            function(){
+            // menambahkan sebuah class CSS baru dalam DOM elemen #daftar
+            $("#daftar").addClass("merahkuning");
+            // menambahkan sebuah class CSS baru dalam DOM elemen .subdaftar
+            $(".subdaftar").addClass("kuninghitam");});
+        </script>
+        
+        <!--Warna highlight, font, bold, padding teks dalam class jquery-->
+        <style type="text/css">
+        .merahkuning {
+            color: red;
+            font-weight: bold;
+            background-color: yellow;
+            padding: 3px;
+        }
+        .kuninghitam{
+            color: blue;
+            background-color: green;
+        }
+        </style>
+    </head>
+
+    <body>
+        <div>
+            <!--teks paragraf singkat-->
+            <p>Paragraf Pertama</p>
+        </div>
+        <div>
+            <!--Membuat daftar list berdasarkan DOM elemen daftar dan subdaftar-->
+            <ul id="daftar">
+                <li>Item 1</li>
+                <!--class subdaftar sebagai pembeda dengan daftar-->
+                <li class="subdaftar">Item 2</li>
+                <li>Item 3</li>
+            </ul>
+        </div>
+    </body>
+</html>

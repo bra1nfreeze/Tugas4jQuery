@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>satu</title>
+        <!--Implementasi awal Javascript berdasarkan sumber jQuery-->
+        <script src="jquery-3.6.0.min.js"></script>
+        <!--Implementasi kode yang terdapat pada Javascript-->
+        <script type="text/javascript">
+        // function khusus digunakan oleh jQuery untuk menganalisa mendeteksi DOM
+        $(document).ready(
+            // function bagian kode yang akan dijalakan ketika DOM sudah siap
+            function(){
+            // menyembunyikan sebuah DOM elemen #foto berdasarkan .sembunyi kecepatan slow "pelan"
+            $(".sembunyi").click(function(){$("#foto").hide("slow")});
+            // menampilkan sebuah DOM elemen #foto berdasarkan .tampil kecepatan slow "pelan"
+            $(".tampil").click(function(){$("#foto").show("slow")});
+        });
+        </script>
+    </head>
+    <body>
+        <!--Membuat tombol button berdasarkan masing-masing class-->
+        <button class="sembunyi">Sembunyikan</button>
+        <button class="tampil">Tampilkan</button>
+        <!--menambahkan gambar melalui paragraf dengan sumber dari folder-->
+        <p><img id="foto" src="logoupnbaru.png"></p>
+    </body>
+</html>

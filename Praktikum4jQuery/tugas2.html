@@ -1,0 +1,56 @@
+<html>
+<head>
+    <title>Tugas 2</title>
+	<!--Implementasi awal Javascript berdasarkan sumber jQuery-->
+	<script src="jquery-3.6.0.min.js"></script>
+	<!--Implementasi kode yang terdapat pada Javascript-->
+	<script type="text/javascript">
+		// function khusus digunakan oleh jQuery untuk menganalisa mendeteksi DOM
+		$(document).ready(
+			// function bagian kode yang akan dijalakan ketika DOM sudah siap
+			function(){
+			// menambahkan sebuah class CSS baru dan menganalisa dalam DOM elemen #box1
+			$(".change").ready(function(){$("#box1").addClass("kotak")});
+			// menambahkan sebuah class CSS baru dan event dblclick aksi ganda dalam DOM elemen #box1
+			$(".change").dblclick(function(){$("#box1").addClass("red");});
+			// menambahkan sebuah class CSS dan menganalisa dalam DOM elemen #box2
+			$(".change2").ready(function(){$("#box2").addClass("kotak")});
+			// menambahkan sebuah class CSS dan event dblclick aksi ganda dalam DOM elemen #box2
+			$(".change2").dblclick(function(){$("#box2").addClass("red");});
+			// menambahkan sebuah class CSS dan menganalisa dalam DOM elemen #box3
+			$(".change3").ready(function(){$("#box3").addClass("kotak")});
+			// menambahkan sebuah class CSS dan event dblclick aksi ganda dalam DOM elemen #box3
+			$(".change3").dblclick(function(){$("#box3").addClass("red");});
+			// menambahkan sebuah class CSS dan menganalisa dalam DOM elemen #box4
+			$(".change4").ready(function(){$("#box4").addClass("kotak")});
+			// menambahkan sebuah class CSS dan event dblclick aksi ganda dalam DOM elemen #box4
+			$(".change4").dblclick(function(){$("#box4").addClass("red");});
+		});
+	</script>
+	<!--Warna highlight, font, bold, padding teks dalam class jquery-->
+	<style type="text/css">
+		 .kotak {
+			width: 100px;
+			height: 100px;
+			background-color: yellow;
+			border: none;
+			display: inline-block;
+			margin-left: 10px;
+		}
+		.red {
+			background-color: red;
+			border: none;
+		}
+	</style>
+
+</head>
+    <body>
+		<!--teks paragraf singkat-->
+        <p>Klik 2x untuk mengubah warna kotak </p>
+		<!--divisi atau seleksi-->
+        <div class="change" id="box1"></div> 
+        <div class="change2" id="box2"></div> 
+        <div class="change3" id="box3"></div>
+        <div class="change4" id="box4"></div>
+    </body>
+</html>

@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>Effect Javascript </title>
+        <!--Implementasi awal Javascript berdasarkan sumber jQuery-->
+        <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+        <!--Implementasi kode yang terdapat pada Javascript-->
+        <script type="text/javascript">
+        // function khusus digunakan oleh jQuery untuk menganalisa mendeteksi DOM
+        $(document).ready(
+            // function bagian kode yang akan dijalakan ketika DOM sudah siap
+            function(){
+            // Parameter untuk mengeksekusi kode satu kali sesuai dengan waktu ditentukan 
+            setTimeout(function(){
+                // menyembunyikan sebuah DOM elemen #kotak kecepatan slow "pelan"
+                $("#kotak").fadeOut("slow",function(){
+                // metode remove() menghapus elemen #kotak
+                $("#kotak").remove();
+                });
+            }, 3000);
+        });
+        </script>
+
+        <!--Border DOM elemen #kotak h3-->
+        <style type="text/css">
+        #kotak {
+            width: 300px;
+            height: 50px;
+            background: lightyellow;
+            border: 1px solid black;
+            padding: 5px;
+        }
+        </style>
+
+    </head>
+    <body>
+        <!--Heading Teks berdasarkan id kotak-->
+        <h3 id="kotak">
+            Perhatikan baik-baik teks ini, 
+            karena teks akan hilang dalam hitungan 3 detik
+        </h3>
+    </body>
+</html>

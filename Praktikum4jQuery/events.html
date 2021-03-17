@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Events Javascript</title>
+        <!--Implementasi awal Javascript berdasarkan sumber jQuery-->
+        <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+        <!--Implementasi kode yang terdapat pada Javascript-->
+        <script type="text/javascript">
+        // function khusus digunakan oleh jQuery untuk menganalisa mendeteksi DOM
+            $(document).ready(
+                // function bagian kode yang akan dijalakan ketika DOM sudah siap
+                function(){
+                // memicu event klik tombol tersebut pada sebuah elemen html "a" 
+                $("a").click(function(){
+                // ketika di-klik muncul pop up
+                alert("selamat datang di website facebook");
+                });
+            });
+            </script>
+    </head>
+    <body>
+        <!--membuat sebuah link yang diarahkan pada alamat tujuan-->
+        <a href="https://facebook.com">
+        klik disini untuk membuka website facebook</a>
+    </body>
+</html>
